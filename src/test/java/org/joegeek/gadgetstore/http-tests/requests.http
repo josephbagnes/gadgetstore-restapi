@@ -1,0 +1,33 @@
+POST http://localhost:8080/store/gadget/register-product
+Content-Type: application/json
+
+{
+  "brand": "Apple",
+  "model": "Macbook Pro",
+  "price": 1000
+}
+
+POST http://localhost:8080/store/gadget/register-product
+Content-Type: application/json
+
+{
+  "brand": "Google",
+  "model": "Wifi",
+  "price": 200
+}
+
+GET http://localhost:8080/store/gadget/view/1
+GET http://localhost:8080/store/gadget/view/2
+
+PUT http://localhost:8080/store/gadget/update/1
+Content-Type: application/json
+
+{
+  "brand": "Apple",
+  "model": "Macbook Air",
+  "price": 900
+}
+
+GET http://localhost:8080/store/gadget/get-all
+
+DELETE http://localhost:8080/store/gadget/delete/1
